@@ -9,27 +9,67 @@
 <body>
 
     <div>
-        <h1>Formulário Teste</h1>
-        <p>Fale um pouco sobre você?</p>
+        <h1 id="titulo">Formulário Teste</h1>
+        <p id="subtitulo">Fale um pouco sobre você?</p>
         <br>
     </div>
     <form>
-        <fieldset>
+        <fieldset class="grupo">
         <div>
-            <label>Fale um pouco sobre você?</label>
-            <input type="text" nome="Fale um pouco sobre você?" id="Fale um pouco sobre você?">
+            <label for="nome"><strong>Seu nome</strong></label>
+            <input type="text" nome="Seu nome" id="Seu nome" required>
         </div>
 
-        <div>
-            <label>Sua idade</label>
-            <input type="text" nome="Sua idade" id="Sua idade">
+        <div class="campo">
+            <label for="idade"><Strong>Sua idade</Strong></label>
+            <input type="text" nome="Sua idade" id="Sua idade" required>
         </div>
         </fieldset>
 
-        <div>
-            <label>Email</label>
-             <input type="email" nome="Email" id="Email">
+        <div class="campo">
+            <label for="email"><Strong>Email</Strong></label>
+             <input type="email" nome="Email" id="Email" required>
         </div>
+        <div class="campo">
+            <label><strong>Qual seu estilo de filme favorito</strong></label>
+            <label>
+                <input type="radio" name="filme" value="terror"checked>Terror
+            </label>
+            <label>
+                <input type="radio" name="filme" volue="aventureiro">Aventura
+            </label>
+            <label>
+                <input type="radio" name="filme" voluer="ficção">Ficção cientifica
+            </label>
+        </div>
+        <div>
+            <label for="Game Favorito"><strong>Seu tipo de Game preferido?</strong></label>
+            <select id="Seu tipo de Game preferido?">
+                <option Selected disabled="">Selecione</option>
+                <option>RPG</option>
+                <option>MMORPG</option>
+                <option>Fps</option>
+                <option>Aventura</option>
+                <option>Simuladores</option>
+            </select>
+        </div>
+        <fieldset class="grupo">
+            <div>
+                <label><strong>Qual dos sistemas operacionais você usa?</strong></label><br><br>
+                <input type="checkbox" id="Sistemas" name="Sistemas" volue="Linux">
+                <label for="Sistemas">Linux</label>
+                <input type="checkbox" id="Sistemas1" name="Sistemas1" Volue="Windows 10 or 11">
+                <label for="sistemas1">Windows 10 or 11</label>
+                <input type="checkbox" id="Sistemas2" name="Sistemas2" Volue="Mac OS">
+                <label for="Sistemas2">Mac OS</label>
+            </div>
+        </fieldset>
+        <div>
+            <br>
+            <label><strong>Conte-me um pouco sobre você?</strong></label>
+            <textarea raw="12" style="width: 34em" id="Sobre você" name="Sobre você"></textarea>
+        </div>
+        <button Class="Botao" type="submit">Concluido</button>
     </form>
     
 </body>
